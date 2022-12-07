@@ -6,9 +6,7 @@
 [ext_resource path="res://Monstro/textures/WendigoMergedNormalMaps.png" type="Texture" id=4]
 [ext_resource path="res://Monstro/textures/body-cloth-normal.tga.png" type="Texture" id=5]
 [ext_resource path="res://Monstro/textures/body-cloth.tga.png" type="Texture" id=6]
-
-[sub_resource type="ArrayMesh" id=1]
-resource_name = "defaultMesh"
+[ext_resource path="res://Monstro/Monstro.gd" type="Script" id=7]
 
 [sub_resource type="ArrayMesh" id=2]
 resource_name = "Body_polySurface2Mesh"
@@ -77,11 +75,10 @@ start_node = "Andando"
 [sub_resource type="AnimationNodeStateMachinePlayback" id=13]
 
 [node name="Monster" type="KinematicBody"]
-
-[node name="default" type="MeshInstance" parent="."]
-mesh = SubResource( 1 )
+script = ExtResource( 7 )
 
 [node name="Skeleton" type="Skeleton" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 bones/0/name = "mixamorig_Hips"
 bones/0/parent = -1
 bones/0/rest = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00028702, 1.03124, 0.0122819 )

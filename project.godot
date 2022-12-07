@@ -14,6 +14,14 @@ config/name="Novo Projeto"
 run/main_scene="res://Fase.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Jogo="*res://Jogo.gd"
+
+[debug]
+
+settings/fps/force_fps=20
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true

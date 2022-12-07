@@ -143,6 +143,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.51964, 0 )
 spring_length = 2.5
 
 [node name="Camera" type="Camera" parent="AncoraCam/SpringArm"]
+fov = 50.0
 
 [node name="Modelo" type="Spatial" parent="."]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
@@ -504,4 +505,5 @@ parameters/Correndo/blend_position = Vector2( 0.000642657, 0.950867 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource( 14 )
+unit_size = 4.5
 attenuation_filter_db = 0.0
